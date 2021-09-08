@@ -1,0 +1,12 @@
+FROM openjdk:8u191-jre-alpine3.8
+
+WORKDIR /usr/share/udemywass
+
+ADD target target/selenium-docker.jar selenium-docker.jar
+ADD target target/selenium-docker-tests.jar selenium-docker-tests.jar
+ADD target/libs libs
+
+ADD testng.xml testng.xml
+ADD duckduckgo.xml duckduckgo.xml
+
+ENTRYPOINT java -cp selenium-docker.jar;selenium-docker-tests.jar;libs/* -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE

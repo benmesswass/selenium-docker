@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="duckduckgo-module">
+    <test name="duckduckgo-1">
+        <parameter name="keyword" value="java" />
+        <classes>
+            <class name = "com.duckduckgo.tests.DuckduckGoTest" />
+        </classes>
+    </test>
+    <test name="duckduckgo-2">
+        <parameter name="keyword" value="java" />
+        <classes>
+            <class name = "com.duckduckgo.tests.DuckduckGoTest" />
+        </classes>
+    </test>
+    <test name="duckduckgo-3">
+        <parameter name="keyword" value="java" />
+        <classes>
+            <class name = "com.duckduckgo.tests.DuckduckGoTest" />
+        </classes>
+    </test>
+    <test name="duckduckgo-4">
+        <parameter name="keyword" value="java" />
+        <classes>
+            <class name = "com.duckduckgo.tests.DuckduckGoTest" />
+        </classes>
+    </test>
+</suite>
